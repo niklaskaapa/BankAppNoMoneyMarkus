@@ -1,10 +1,15 @@
-﻿using Entities.Transactions;
+﻿using Entities.Customers;
+using Entities.Transactions;
 
 namespace Entities.Base;
 
 public abstract class AccountBase
 {
     public Guid Id { get; set; } = Guid.NewGuid();
+
+    public Guid CustomerId { get; set; }
+    public Customer Customer { get; set; }   // NavigeringsProperty
+
     private decimal startingBalance = 0;
 
     protected decimal StartingBalance
