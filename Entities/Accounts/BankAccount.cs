@@ -13,6 +13,8 @@ public class BankAccount : AccountBase
     {
     }
 
+    // TEST
+
     //public override decimal Balance()
     //{
     //    var t = bankTransactions.Sum(x => x.Amount);
